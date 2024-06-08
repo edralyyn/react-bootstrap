@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import LayoutComponent from './components/LayoutComponent';
+import NavbarComponent from './components/NavbarComponent';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 
-function App() {
+const App = () => {
+  const appStyle = {
+    backgroundColor: '#f3f3f3',
+    minHeight: '100vh',
+    margin: '0',
+    padding: '0',
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={appStyle}> {/* Apply inline styles for background color */}
+      <NavbarComponent />
+      <LayoutComponent />
     </div>
   );
-}
+};
 
 export default App;
