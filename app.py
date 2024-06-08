@@ -1,6 +1,7 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from flask_cors import CORS
 from topology import find_csv_files, print_topology
+import input
 
 app = Flask(__name__)
 CORS(app)
@@ -16,5 +17,16 @@ def get_topology():
     topology_output = print_topology(csv_files)
     return jsonify({'topology': topology_output})
 
+@app.route('/', methods=['POST'])
+def post_days_difference():
+    data = request.json
+    days_difference = data.get('daysDifference')
+    if days_difference is not None:
+        print(f"Days Difference: {days_difference}")
+        input.process_days_difference(days_difference)
+        return jsonify({'message': 'Days difference received'}), 200
+    else:
+        return jsonify({'message': 'No days difference provided'}), 400
+    
 if __name__ == '__main__':
     app.run(debug=True)
