@@ -19,7 +19,7 @@ const Cell5 = () => {
     <div className="col" style={{ borderRadius: '12px', marginInlineStart: '7.5px', padding: '20px', textAlign: 'center', backgroundColor: '#ffffff', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.5)', position: 'relative', display: 'flex', flexDirection: 'column' }}>
       <div>
         <h5 style={{ margin: '0px'}}>Topology</h5>
-        <pre style={{ textAlign: 'left', whiteSpace: 'pre' }}>{topology}</pre>
+        <pre style={{ textAlign: 'left', whiteSpace: 'pre', marginBottom: '0px' }}>{topology}</pre>
       </div>
     </div>
   );
