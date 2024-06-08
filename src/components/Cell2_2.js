@@ -8,7 +8,7 @@ const Model = ({ path }) => {
     return <primitive object={scene} scale={1} />;
 };
 
-const SwitchModel = () => (
+const RouterModel = () => (
     <Canvas style={{ width: '100%', height: '100%', backgroundColor: 'white' }} camera={{ position: [0, 0, 10], fov: 50 }}>
         <ambientLight intensity={0.5} />
         <directionalLight intensity={0.5} position={[0, 10, 0]} />
@@ -26,7 +26,7 @@ const Cell2_2 = () => (
             <span style={{ flex: 1, textAlign: 'center' }}>Router 1</span>
             <i className="bi bi-arrow-right-short" style={{ fontSize: '2rem', color: '#A1A3AA', marginLeft: '5px' }}></i>
         </div>
-        <SwitchModel />
+        <RouterModel />
     </div>
 );
 
