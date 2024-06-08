@@ -23,14 +23,15 @@ const Cell2_2 = () => (
     <div className='row' style={{ marginBottom: '15px', borderRadius: '12px', paddingTop: '20px', paddingBottom: '20px', textAlign: 'center', backgroundColor: '#ffffff', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.5)', position: 'relative' }}>
         <div style={{ margin: '0px', display: 'flex', alignItems: 'center', justifyContent: 'center', paddingInlineStart: '20px', paddingInlineEnd: '20px' }}> 
             <i className="bi bi-arrow-left-short" style={{ fontSize: '2rem', color: '#A1A3AA', marginRight: '5px' }}></i>
-            <span style={{ flex: 1, textAlign: 'center' }}>Router 1</span>
+            <h5 style={{ flex: 1, textAlign: 'center' }}>Router 1</h5>
             <i className="bi bi-arrow-right-short" style={{ fontSize: '2rem', color: '#A1A3AA', marginLeft: '5px' }}></i>
         </div>
         <div className='row' style={{ marginTop: '15px', justifyContent: 'center' }}>
             <div className='col' style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
                 <RouterModel />
                 <div style={{ marginLeft: '10px', borderRadius: '10px', padding: '10px', backgroundColor: '#f3f3f3', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.5)', height: '180px', width: '180px' }}>
-                    <span>TEXT</span>
+                    <h6>Diagnosis</h6>
+                    <span>Sample text diagnosis</span>
                 </div>
             </div>
         </div>

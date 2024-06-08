@@ -23,7 +23,7 @@ const LayoutComponent = () => {
                     <div className='row'>
                     <div style={{ margin: '0px', marginBottom: '15px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}> 
                         <i className="bi bi-arrow-left-short" style={{ fontSize: '2rem', color: '#A1A3AA', marginRight: '5px' }}></i>
-                        <span style={{ flex: 1, textAlign: 'center' }}>PC 1</span>
+                        <h5 style={{ flex: 1, textAlign: 'center' }}>PC 1</h5>
                         <i className="bi bi-arrow-right-short" style={{ fontSize: '2rem', color: '#A1A3AA', marginLeft: '5px' }}></i>
                     </div>
                         <div style={{ flex: 1 }}>
