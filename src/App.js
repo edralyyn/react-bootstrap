@@ -12,7 +12,7 @@ const App = () => {
   };
 
   return (
-    <div style={appStyle}> {/* Apply inline styles for background color */}
+    <div style={appStyle}>
       <NavbarComponent />
       <LayoutComponent />
     </div>
