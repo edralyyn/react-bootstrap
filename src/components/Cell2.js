@@ -29,7 +29,7 @@ const Cell2 = () => (
         <div className='row' style={{ marginTop: '15px', justifyContent: 'center' }}>
             <div className='col' style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
                 <SwitchModel />
-                <div style={{ marginLeft: '10px', borderRadius: '10px', padding: '10px', backgroundColor: '#f3f3f3', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.5)', height: '150px', width: '150px' }}>
+                <div style={{ marginLeft: '10px', borderRadius: '10px', padding: '10px', backgroundColor: '#f3f3f3', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.5)', height: '180px', width: '180px' }}>
                     <span>TEXT</span>
                 </div>
             </div>

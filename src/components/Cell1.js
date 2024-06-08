@@ -20,7 +20,7 @@ const ModelCanvas = ({ path }) => (
 const MiniCell = ({ path, children }) => (
     <div style={{ display: 'flex', alignItems: 'center', padding: '10px', position: 'relative', zIndex: 2 }}>
         <ModelCanvas path={path} />
-        <div style={{ marginLeft: '10px', borderRadius: '10px', padding: '10px', backgroundColor: '#f3f3f3', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.5)', height: '100px', width: '200px' }}>
+        <div style={{ marginLeft: '10px', borderRadius: '12px', padding: '10px', backgroundColor: '#f3f3f3', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.5)', height: '100px', width: '200px' }}>
             {children}
         </div>
     </div>
