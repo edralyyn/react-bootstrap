@@ -23,10 +23,11 @@ def post_days_difference():
     days_difference = data.get('daysDifference')
     if days_difference is not None:
         print(f"Days Difference: {days_difference}")
-        input.process_days_difference(days_difference)
+        with open('days_difference.txt', 'w') as f:
+            f.write(str(days_difference))
         return jsonify({'message': 'Days difference received'}), 200
     else:
         return jsonify({'message': 'No days difference provided'}), 400
-    
+
 if __name__ == '__main__':
     app.run(debug=True)
