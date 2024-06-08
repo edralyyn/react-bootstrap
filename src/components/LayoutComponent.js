@@ -17,7 +17,7 @@ const Model = ({ path }) => {
 
 const LayoutComponent = () => {
     return (
-        <div className="container-fluid text-center" style={{ marginTop: '30px' }}>
+        <div className="container-fluid text-center" style={{ marginTop: '0px' }}>
             <div className="row">
             <div className="col-6" style={{ borderRadius: '12px', margin: '15px', padding: '20px', textAlign: 'center', backgroundColor: '#ffffff', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.5)', display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
                     <div className='row'>
@@ -41,10 +41,17 @@ const LayoutComponent = () => {
                     </div>
             </div>
 
-                <div className="col-3" style={{ marginTop: '15px', marginBottom: '15px' }}>
-                    <Cell2 />
-                    <Cell2_2 />
-                </div>
+            <div className="col-3" style={{ marginTop: '15px', paddingInlineStart: '10px', paddingInlineEnd: '10px' }}>
+
+                    <div style={{ flex: 1 }}>
+                        <Cell2 />
+                    </div>
+                    <div style={{ flex: 1 }}>
+                        <Cell2_2 />
+                    </div>
+
+            </div>
+
 
                 <div className="col" style={{ borderRadius: '12px', margin: '15px', padding: '20px', textAlign: 'center', backgroundColor: '#ffffff', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.5)', position: 'relative', display: 'flex', flexDirection: 'column' }}>
                     <Cell3 />

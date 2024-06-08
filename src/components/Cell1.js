@@ -8,7 +8,7 @@ const Model = ({ path }) => {
 };
 
 const ModelCanvas = ({ path }) => (
-    <Canvas style={{ width: '100px', height: '100px' }}>
+    <Canvas style={{ width: '100px', height: '100px', borderRadius: '10px', }}>
         <ambientLight intensity={0.5} />
         <Suspense fallback={null}>
             <Model path={path} />
