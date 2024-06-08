@@ -1,7 +1,8 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 from topology import find_csv_files, print_topology
-import input
+from flask import Flask, render_template
+from linegraph import generate_line_graph
 
 app = Flask(__name__)
 CORS(app)
@@ -28,6 +29,11 @@ def post_days_difference():
         return jsonify({'message': 'Days difference received'}), 200
     else:
         return jsonify({'message': 'No days difference provided'}), 400
+
+@app.route('/line_graph')
+def line_graph():
+    graph_html = generate_line_graph()
+    return render_template('line_graph.html', graph_html=graph_html)
 
 if __name__ == '__main__':
     app.run(debug=True)
