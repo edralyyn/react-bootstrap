@@ -65,7 +65,6 @@ const LayoutComponent = () => {
                         <Cell5 />
                     </div>
                 </div>
-
                 <Cell6 />
             </div>
         </div>
