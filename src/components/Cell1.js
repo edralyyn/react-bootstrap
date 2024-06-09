@@ -35,12 +35,28 @@ const Cell1 = () => {
     ];
 
     return (
-        <div style={{ position: 'relative', overflow: 'hidden', flex: 1 }}>
-            {paths.map(({ path, text }, index) => (
-                <div key={index} className="col-12">
-                    <MiniCell path={path}>{text}</MiniCell>
-                </div>
-            ))}
+        <div className='row' >
+            <div style={{ margin: '0px', marginBottom: '15px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}> 
+                <i className="bi bi-arrow-left-short" style={{ fontSize: '2rem', color: '#A1A3AA', marginRight: '5px' }}></i>
+                    <h5 style={{ flex: 1, textAlign: 'center' }}>PC 1</h5>
+                <i className="bi bi-arrow-right-short" style={{ fontSize: '2rem', color: '#A1A3AA', marginLeft: '5px' }}></i>
+            </div>
+            <div style={{ position: 'relative', overflow: 'hidden', flex: 1 }}>
+                {paths.map(({ path, text }, index) => (
+                    <div key={index} className="col-12">
+                        <MiniCell path={path}>{text}</MiniCell>
+                    </div>
+                ))}
+            </div>
+            <div style={{ flex: 1, display: 'flex', position: 'relative', height: '400px' }}>
+                <Canvas style={{ width: '100%', height: '100%' }} camera={{ position: [20, 20, 20], fov: 50 }}>
+                    <ambientLight intensity={0.5} />
+                    <Suspense fallback={null}>
+                        <Model path="gaming_desktop_pc.glb" />
+                    </Suspense>
+                    <OrbitControls enableZoom={true} />
+                </Canvas>
+            </div>
         </div>
     );
 };
