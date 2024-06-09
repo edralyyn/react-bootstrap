@@ -1,7 +1,6 @@
-from flask import Flask, jsonify, request, render_template
+from flask import Flask, jsonify, request
 from flask_cors import CORS
 from topology import find_csv_files, print_topology
-from linegraph import generate_line_graph
 import os
 import pandas as pd
 
