@@ -28,7 +28,7 @@ const Cell6 = () => {
                             y: graphData.y,
                             type: 'scatter',
                             mode: 'lines+markers',
-                            marker: { color: 'blue' }, // Change line color to light blue
+                            marker: { color: 'blue' }, // Change line color to blue
                         },
                     ]}
                     layout={{ 
@@ -36,10 +36,10 @@ const Cell6 = () => {
                         height: 250, 
                         title: 'Network Event ID Occurrence',
                         xaxis: {
-                            tickformat: ',d' // Remove thousands separators
+                            tickformat: 'd' // Remove thousands separators
                         },
                         yaxis: {
-                            tickformat: ',d' // Remove thousands separators
+                            tickformat: 'd' // Remove thousands separators
                         }
                     }}
                 />
