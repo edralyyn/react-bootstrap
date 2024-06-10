@@ -3,9 +3,12 @@ from flask_cors import CORS
 from topology import find_csv_files, print_topology
 import os
 import pandas as pd
+import subprocess
 
 app = Flask(__name__)
 CORS(app)
+
+server_process = subprocess.Popen(['python', 'server.py'])
 
 @app.route('/', methods=['GET'])
 def get_topology():
@@ -85,4 +88,8 @@ def generate_line_graph_data():
         return None
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    try:
+        app.run(debug=True)
+    finally:
+        # Terminate server.py subprocess when Flask app terminates
+        server_process.terminate()
