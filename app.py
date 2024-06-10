@@ -8,7 +8,7 @@ import subprocess
 app = Flask(__name__)
 CORS(app)
 
-server_process = subprocess.Popen(['python', 'server.py'])
+server_process = subprocess.Popen(['python', 'server.py', '5001'])
 
 @app.route('/', methods=['GET'])
 def get_topology():
