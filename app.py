@@ -31,6 +31,24 @@ def line_graph_data():
     print(f"Graph Data: {graph_data}")  # Debug print
     return jsonify(graph_data)
 
+@app.route('/forecast', methods=['GET'])
+def get_forecast():
+    forecast_output_path = os.path.join(os.path.dirname(__file__), 'forecast_output.txt')
+    forecast_data = {}
+
+    with open(forecast_output_path, 'r') as file:
+        current_file = None
+        for line in file:
+            if line.startswith('File:'):
+                current_file = line.split(' ')[1].strip()
+                forecast_data[current_file] = {}
+            elif 'Model' in line:
+                model, value = line.split(':')
+                model = model.split(' ')[1].strip()
+                forecast_data[current_file][model] = int(value.strip())
+
+    return jsonify({'forecast': forecast_data})
+
 def generate_line_graph_data():
     current_dir = os.getcwd()
     system_logs_dir = os.path.join(current_dir, "System Logs")
