@@ -67,8 +67,18 @@ def generate_line_graph_data():
         dfs = []
         for file in csv_files:
             file_path = os.path.join(folder_path, file)
-            df = pd.read_csv(file_path)
-            dfs.append(df)
+            try:
+                df = pd.read_csv(file_path)
+                if 'Event ID' in df.columns:
+                    column_name = 'Event ID'
+                elif 'Id' in df.columns:
+                    column_name = 'Id'
+                else:
+                    print(f"Skipping file '{file}' as neither 'Event ID' nor 'Id' found.")
+                    continue
+                dfs.append(df)
+            except Exception as e:
+                print(f"Error reading file '{file}': {str(e)}")
 
         if dfs:
             combined_df = pd.concat(dfs, ignore_index=True)
@@ -76,8 +86,6 @@ def generate_line_graph_data():
 
     if combined_dfs:
         final_combined_df = pd.concat(combined_dfs, ignore_index=True)
-        column_name = 'Event ID'
-
         value_counts = final_combined_df[column_name].value_counts()
         sorted_values = value_counts.sort_index()
 
