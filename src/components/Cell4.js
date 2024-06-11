@@ -2,7 +2,7 @@
 import React from 'react';
 
 const Cell4 = () => (
-    <div className="col" style={{ borderRadius: '12px', marginInlineEnd: '7.5px', padding: '20px', textAlign: 'center', backgroundColor: '#ffffff', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.5)', position: 'relative', display: 'flex', flexDirection: 'column' }}>
+    <div className="col" style={{ borderRadius: '12px', marginInlineEnd: '7.5px', padding: '20px',marginBottom: '20px', textAlign: 'center', backgroundColor: '#ffffff', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.5)', position: 'relative', display: 'flex', flexDirection: 'column' }}>
         <div>
             <h5 style={{ margin: '0px'}}>Suggested Solution</h5>
             <span>AI RESULTS</span>
