@@ -19,7 +19,7 @@ const Cell6 = () => {
     }, []);
 
     return (
-        <div className="col" style={{ justifyContent: 'center', borderRadius: '12px', marginInlineStart: '15px', marginInlineEnd: '15px', textAlign: 'center', backgroundColor: '#ffffff', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.5)', position: 'relative', display: 'flex', flexDirection: 'column' }}>
+        <div className="col" style={{ marginInlineStart: '15px', marginInlineEnd: '15px', marginBottom: '15px', justifyContent: 'center', borderRadius: '12px', margin: '15px auto', textAlign: 'center', backgroundColor: '#ffffff', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.5)', position: 'relative', display: 'flex', flexDirection: 'column' }}>
 
                 <Plot
                     data={[
@@ -32,13 +32,15 @@ const Cell6 = () => {
                         },
                     ]}
                     layout={{ 
-                        width: 600, 
-                        height: 250, 
+                        width: 1200, 
+                        height: 300,
                         title: 'Network Event ID Occurrence',
                         xaxis: {
+                            title: 'Event ID', // Set x-axis title
                             tickformat: 'd' // Remove thousands separators
                         },
                         yaxis: {
+                            title: 'Occurrence', // Set y-axis title
                             tickformat: 'd' // Remove thousands separators
                         }
                     }}
