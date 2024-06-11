@@ -1,0 +1,24 @@
+File: 169.254.108.36.csv
+Model CPU_84%.h5: 113
+Model GPU_91%.h5: 114
+Model RAM_98%.h5: 113
+
+File: 169.254.162.233.csv
+Model CPU_84%.h5: 10148
+Model GPU_91%.h5: 10149
+Model RAM_98%.h5: 10148
+
+File: 192.168.1.57.csv
+Model CPU_84%.h5: 10016
+Model GPU_91%.h5: 105
+Model RAM_98%.h5: 10016
+
+File: 192.168.100.152.csv
+Model CPU_84%.h5: 10148
+Model GPU_91%.h5: 10149
+Model RAM_98%.h5: 10148
+
+File: 192.168.254.120.csv
+Model CPU_84%.h5: 10148
+Model GPU_91%.h5: 10149
+Model RAM_98%.h5: 10148
