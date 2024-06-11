@@ -1,0 +1,106 @@
+"Message","Id","Version","Qualifiers","Level","Task","Opcode","Keywords","RecordId","ProviderName","ProviderId","LogName","ProcessId","ThreadId","MachineName","UserId","TimeCreated","ActivityId","RelatedActivityId","ContainerLog","MatchedQueryIds","Bookmark","LevelDisplayName","OpcodeDisplayName","TaskDisplayName","KeywordsDisplayNames","Properties"
+"The WinRM service is listening for WS-Management requests. 
+
+ User Action 
+ Use the following command to see the specific IPs on which WinRM is listening: 
+
+ winrm enumerate winrm/config/listener","10148","0","7","4","0","0","36028797018963968","480741","Microsoft-Windows-WinRM","a7975c8f-ac13-49f1-87da-5a984a4ab417","System","0","0","DESKTOP-RGQ5IKE",,"11/06/2024 6:26:47 am",,,"System","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info",,"System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"The WinRM service is not listening for WS-Management requests. 
+
+ User Action 
+ If you did not intentionally stop the service, use the following command to see the WinRM configuration: 
+
+ winrm enumerate winrm/config/listener","10149","0","7","3","0","0","36028797018963968","480740","Microsoft-Windows-WinRM","a7975c8f-ac13-49f1-87da-5a984a4ab417","System","0","0","DESKTOP-RGQ5IKE",,"11/06/2024 6:26:47 am",,,"System","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Warning","Info",,"System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"The WinRM service is listening for WS-Management requests. 
+
+ User Action 
+ Use the following command to see the specific IPs on which WinRM is listening: 
+
+ winrm enumerate winrm/config/listener","10148","0","7","4","0","0","36028797018963968","480739","Microsoft-Windows-WinRM","a7975c8f-ac13-49f1-87da-5a984a4ab417","System","0","0","DESKTOP-RGQ5IKE",,"11/06/2024 6:26:02 am",,,"System","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info",,"System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"The WinRM service is not listening for WS-Management requests. 
+
+ User Action 
+ If you did not intentionally stop the service, use the following command to see the WinRM configuration: 
+
+ winrm enumerate winrm/config/listener","10149","0","7","3","0","0","36028797018963968","480738","Microsoft-Windows-WinRM","a7975c8f-ac13-49f1-87da-5a984a4ab417","System","0","0","DESKTOP-RGQ5IKE",,"11/06/2024 6:26:01 am",,,"System","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Warning","Info",,"System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"The time provider 'VMICTimeProvider' has indicated that the current hardware and operating environment is not supported and has stopped. This behavior is expected for VMICTimeProvider on non-HyperV-guest environments. This may be the expected behavior for the current provider in the current operating environment as well.","158","0",,"4","0","0","-9223372036854775808","480737","Microsoft-Windows-Time-Service","06edcfeb-0fd0-4e53-acca-a6f8bbf81bcb","System","1536","13372","DESKTOP-RGQ5IKE","S-1-5-19","11/06/2024 6:15:31 am",,,"System","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info",,"System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"The WinRM service is listening for WS-Management requests. 
+
+ User Action 
+ Use the following command to see the specific IPs on which WinRM is listening: 
+
+ winrm enumerate winrm/config/listener","10148","0","7","4","0","0","36028797018963968","480736","Microsoft-Windows-WinRM","a7975c8f-ac13-49f1-87da-5a984a4ab417","System","0","0","DESKTOP-RGQ5IKE",,"11/06/2024 6:14:30 am",,,"System","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info",,"System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"The WinRM service is not listening for WS-Management requests. 
+
+ User Action 
+ If you did not intentionally stop the service, use the following command to see the WinRM configuration: 
+
+ winrm enumerate winrm/config/listener","10149","0","7","3","0","0","36028797018963968","480735","Microsoft-Windows-WinRM","a7975c8f-ac13-49f1-87da-5a984a4ab417","System","0","0","DESKTOP-RGQ5IKE",,"11/06/2024 6:14:30 am",,,"System","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Warning","Info",,"System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"The WinRM service is listening for WS-Management requests. 
+
+ User Action 
+ Use the following command to see the specific IPs on which WinRM is listening: 
+
+ winrm enumerate winrm/config/listener","10148","0","7","4","0","0","36028797018963968","480734","Microsoft-Windows-WinRM","a7975c8f-ac13-49f1-87da-5a984a4ab417","System","0","0","DESKTOP-RGQ5IKE",,"11/06/2024 6:12:50 am",,,"System","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info",,"System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"The WinRM service is not listening for WS-Management requests. 
+
+ User Action 
+ If you did not intentionally stop the service, use the following command to see the WinRM configuration: 
+
+ winrm enumerate winrm/config/listener","10149","0","7","3","0","0","36028797018963968","480733","Microsoft-Windows-WinRM","a7975c8f-ac13-49f1-87da-5a984a4ab417","System","0","0","DESKTOP-RGQ5IKE",,"11/06/2024 6:12:49 am",,,"System","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Warning","Info",,"System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"The WinRM service is listening for WS-Management requests. 
+
+ User Action 
+ Use the following command to see the specific IPs on which WinRM is listening: 
+
+ winrm enumerate winrm/config/listener","10148","0","7","4","0","0","36028797018963968","480732","Microsoft-Windows-WinRM","a7975c8f-ac13-49f1-87da-5a984a4ab417","System","0","0","DESKTOP-RGQ5IKE",,"11/06/2024 6:06:22 am",,,"System","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info",,"System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"The WinRM service is not listening for WS-Management requests. 
+
+ User Action 
+ If you did not intentionally stop the service, use the following command to see the WinRM configuration: 
+
+ winrm enumerate winrm/config/listener","10149","0","7","3","0","0","36028797018963968","480731","Microsoft-Windows-WinRM","a7975c8f-ac13-49f1-87da-5a984a4ab417","System","0","0","DESKTOP-RGQ5IKE",,"11/06/2024 6:06:22 am",,,"System","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Warning","Info",,"System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"The WinRM service is listening for WS-Management requests. 
+
+ User Action 
+ Use the following command to see the specific IPs on which WinRM is listening: 
+
+ winrm enumerate winrm/config/listener","10148","0","7","4","0","0","36028797018963968","480730","Microsoft-Windows-WinRM","a7975c8f-ac13-49f1-87da-5a984a4ab417","System","0","0","DESKTOP-RGQ5IKE",,"11/06/2024 6:02:59 am",,,"System","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info",,"System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"The WinRM service is not listening for WS-Management requests. 
+
+ User Action 
+ If you did not intentionally stop the service, use the following command to see the WinRM configuration: 
+
+ winrm enumerate winrm/config/listener","10149","0","7","3","0","0","36028797018963968","480729","Microsoft-Windows-WinRM","a7975c8f-ac13-49f1-87da-5a984a4ab417","System","0","0","DESKTOP-RGQ5IKE",,"11/06/2024 6:02:58 am",,,"System","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Warning","Info",,"System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"The time provider 'VMICTimeProvider' has indicated that the current hardware and operating environment is not supported and has stopped. This behavior is expected for VMICTimeProvider on non-HyperV-guest environments. This may be the expected behavior for the current provider in the current operating environment as well.","158","0",,"4","0","0","-9223372036854775808","480728","Microsoft-Windows-Time-Service","06edcfeb-0fd0-4e53-acca-a6f8bbf81bcb","System","1536","13372","DESKTOP-RGQ5IKE","S-1-5-19","11/06/2024 5:58:27 am",,,"System","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info",,"System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"The time provider 'VMICTimeProvider' has indicated that the current hardware and operating environment is not supported and has stopped. This behavior is expected for VMICTimeProvider on non-HyperV-guest environments. This may be the expected behavior for the current provider in the current operating environment as well.","158","0",,"4","0","0","-9223372036854775808","480727","Microsoft-Windows-Time-Service","06edcfeb-0fd0-4e53-acca-a6f8bbf81bcb","System","1536","9776","DESKTOP-RGQ5IKE","S-1-5-19","11/06/2024 5:41:23 am",,,"System","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info",,"System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"The application-specific permission settings do not grant Local Activation permission for the COM Server application with CLSID 
+{2593F8B9-4EAF-457C-B68A-50F6B8EA6B54}
+ and APPID 
+{15C20B67-12E7-4BB6-92BB-7AFF07997402}
+ to the user DESKTOP-RGQ5IKE\edral SID (S-1-5-21-3773298926-2014835670-1700922433-1001) from address LocalHost (Using LRPC) running in the application container Unavailable SID (Unavailable). This security permission can be modified using the Component Services administrative tool.","10016","0","0","3","0","0","-9187343239835811840","480726","Microsoft-Windows-DistributedCOM","1b562e86-b7aa-4131-badc-b6f3a001407e","System","992","4300","DESKTOP-RGQ5IKE","S-1-5-21-3773298926-2014835670-1700922433-1001","11/06/2024 5:40:37 am","0c2a6980-5722-48a1-b931-0ec9389d0169",,"System","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Warning","Info",,"System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","7040","0","16384","4","0","0","-9187343239835811840","480725","Service Control Manager","555908d1-a6d7-4695-8e1e-26931d2012f4","System","888","2040","DESKTOP-RGQ5IKE","S-1-5-18","11/06/2024 5:39:42 am",,,"System","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information",,,"System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","7040","0","16384","4","0","0","-9187343239835811840","480724","Service Control Manager","555908d1-a6d7-4695-8e1e-26931d2012f4","System","888","13116","DESKTOP-RGQ5IKE","S-1-5-18","11/06/2024 5:35:57 am",,,"System","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information",,,"System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","7040","0","16384","4","0","0","-9187343239835811840","480723","Service Control Manager","555908d1-a6d7-4695-8e1e-26931d2012f4","System","888","13116","DESKTOP-RGQ5IKE","S-1-5-18","11/06/2024 5:34:59 am",,,"System","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information",,,"System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.","7040","0","16384","4","0","0","-9187343239835811840","480722","Service Control Manager","555908d1-a6d7-4695-8e1e-26931d2012f4","System","888","3572","DESKTOP-RGQ5IKE","S-1-5-18","11/06/2024 5:32:59 am",,,"System","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information",,,"System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"The machine-default permission settings do not grant Local Activation permission for the COM Server application with CLSID 
+{C2F03A33-21F5-47FA-B4BB-156362A2F239}
+ and APPID 
+{316CDED5-E4AE-4B15-9113-7055D84DCC97}
+ to the user DESKTOP-RGQ5IKE\edral SID (S-1-5-21-3773298926-2014835670-1700922433-1001) from address LocalHost (Using LRPC) running in the application container Microsoft.Windows.ShellExperienceHost_10.0.19041.4239_neutral_neutral_cw5n1h2txyewy SID (S-1-15-2-155514346-2573954481-755741238-1654018636-1233331829-3075935687-2861478708). This security permission can be modified using the Component Services administrative tool.","10016","0","0","3","0","0","-9187343239835811840","480721","Microsoft-Windows-DistributedCOM","1b562e86-b7aa-4131-badc-b6f3a001407e","System","992","10008","DESKTOP-RGQ5IKE","S-1-5-21-3773298926-2014835670-1700922433-1001","11/06/2024 5:32:47 am","6b8f0889-b884-4496-8e1b-264eeaf8141b",,"System","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Warning","Info",,"System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"Installation Successful: Windows successfully installed the following update: Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.413.220.0) - Current Channel (Broad)","19","1",,"4","1","13","-9223372036854775784","480720","Microsoft-Windows-WindowsUpdateClient","945a8954-c147-4acd-923f-40c45405a658","System","7900","3512","DESKTOP-RGQ5IKE","S-1-5-18","11/06/2024 5:32:19 am",,,"System","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Installation","Windows Update Agent","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"Installation Started: Windows has started installing the following update: Security Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version 1.413.220.0) - Current Channel (Broad)","43","1",,"4","1","13","-9223372036854767608","480719","Microsoft-Windows-WindowsUpdateClient","945a8954-c147-4acd-923f-40c45405a658","System","7900","3512","DESKTOP-RGQ5IKE","S-1-5-18","11/06/2024 5:32:14 am",,,"System","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Installation","Windows Update Agent","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"Windows Update started downloading an update.","44","1",,"4","1","12","-9223372036854767612","480718","Microsoft-Windows-WindowsUpdateClient","945a8954-c147-4acd-923f-40c45405a658","System","7900","3512","DESKTOP-RGQ5IKE","S-1-5-18","11/06/2024 5:32:14 am",,,"System","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Download","Windows Update Agent","System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"The WinRM service is listening for WS-Management requests. 
+
+ User Action 
+ Use the following command to see the specific IPs on which WinRM is listening: 
+
+ winrm enumerate winrm/config/listener","10148","0","7","4","0","0","36028797018963968","480717","Microsoft-Windows-WinRM","a7975c8f-ac13-49f1-87da-5a984a4ab417","System","0","0","DESKTOP-RGQ5IKE",,"11/06/2024 5:30:39 am",,,"System","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information","Info",,"System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"The WinRM service is not listening for WS-Management requests. 
+
+ User Action 
+ If you did not intentionally stop the service, use the following command to see the WinRM configuration: 
+
+ winrm enumerate winrm/config/listener","10149","0","7","3","0","0","36028797018963968","480716","Microsoft-Windows-WinRM","a7975c8f-ac13-49f1-87da-5a984a4ab417","System","0","0","DESKTOP-RGQ5IKE",,"11/06/2024 5:30:39 am",,,"System","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Warning","Info",,"System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
+"The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.","7040","0","16384","4","0","0","-9187343239835811840","480715","Service Control Manager","555908d1-a6d7-4695-8e1e-26931d2012f4","System","888","13116","DESKTOP-RGQ5IKE","S-1-5-18","11/06/2024 5:28:45 am",,,"System","System.UInt32[]","System.Diagnostics.Eventing.Reader.EventBookmark","Information",,,"System.Collections.ObjectModel.ReadOnlyCollection`1[System.String]","System.Collections.Generic.List`1[System.Diagnostics.Eventing.Reader.EventProperty]"
