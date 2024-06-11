@@ -87,20 +87,21 @@ const Cell1 = () => {
     const getForecastData = (pcIP, componentLabel) => {
         const forecastData = forecast[`${pcIP}.csv`];
         if (!forecastData) return 'Loading...';
-
+    
         switch (componentLabel) {
             case 'CPU':
-                return `Hourly prediction for CPU: ${forecastData['CPU_84%.h5']}`;
+                return <span><strong>Hourly prediction for CPU: {forecastData['CPU_84%.h5']}</strong></span>;
             case 'RAM':
-                return `Hourly prediction for RAM: ${forecastData['RAM_98%.h5']}`;
+                return <span><strong>Hourly prediction for RAM: {forecastData['RAM_98%.h5']}</strong></span>;
             case 'GPU':
-                return `Hourly prediction for GPU: ${forecastData['GPU_91%.h5']}`;
+                return <span><strong>Hourly prediction for GPU: {forecastData['GPU_91%.h5']}</strong></span>;
             case 'HDD':
-                return 'Hourly prediction for HDD: N/A'; // Placeholder until HDD data is available
+                return <span><strong>Hourly prediction for HDD: N/A </strong></span>; // Placeholder until HDD data is available
             default:
                 return 'Hourly prediction: N/A';
         }
     };
+    
 
     if (loading) {
         return <div>Loading...</div>;

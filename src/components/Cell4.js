@@ -96,9 +96,9 @@ const Cell4 = () => {
     }, []);
 
     return (
-        <div className="col" style={{ borderRadius: '12px', marginInlineEnd: '7.5px', padding: '20px', marginBottom: '20px', textAlign: 'center', backgroundColor: '#ffffff', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.5)', position: 'relative', display: 'flex', flexDirection: 'column' }}>
+        <div className="col" style={{ borderRadius: '12px', marginInlineEnd: '7.5px', padding: '20px', marginBottom: '20px', textAlign: 'left', backgroundColor: '#ffffff', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.5)', position: 'relative', display: 'flex', flexDirection: 'column' }}>
             <div>
-                <h5 style={{ margin: '0px'}}>Suggested Solutions</h5>
+                <h5 style={{ margin: '0px', marginBottom: '15px', textAlign:'center'}}>Suggested Solutions</h5>
                 {solutions.length === 0 ? (
                     <span>No critical issues predicted</span>
                 ) : (
