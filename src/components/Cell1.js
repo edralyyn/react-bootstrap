@@ -9,8 +9,8 @@ const Model = ({ path }) => {
 };
 
 const ModelCanvas = ({ path }) => (
-    <Canvas style={{ width: '100px', height: '100px', borderRadius: '10px', }}>
-        <ambientLight intensity={0.5} />
+    <Canvas style={{ width: '100px', height: '100px', borderRadius: '10px', }} camera={{ position: [11, 11, 11], fov: 20 }} >
+        <ambientLight intensity={10} />
         <Suspense fallback={null}>
             <Model path={path} />
         </Suspense>
@@ -21,7 +21,7 @@ const ModelCanvas = ({ path }) => (
 const MiniCell = ({ path, children }) => (
     <div style={{ display: 'flex', alignItems: 'center', padding: '10px', position: 'relative', zIndex: 2 }}>
         <ModelCanvas path={path} />
-        <div style={{ marginLeft: '10px', borderRadius: '12px', padding: '10px', backgroundColor: '#f3f3f3', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.5)', height: '100px', width: '200px' }}>
+        <div style={{ marginLeft: '10px', borderRadius: '12px', padding: '10px', backgroundColor: '#00B4D8', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.5)', height: '100px', width: '200px' }}>
             {children}
         </div>
     </div>
@@ -72,13 +72,14 @@ const Cell1 = () => {
     return (
         <div className='row'>
             <div style={{ margin: '0px', marginBottom: '15px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}> 
-                <i className="bi bi-arrow-left-short" onClick={handlePreviousClick} style={{ fontSize: '2rem', color: '#A1A3AA', marginRight: '5px', cursor: 'pointer' }}></i>
+                <i className="bi bi-arrow-left-short" onClick={handlePreviousClick} style={{ fontSize: '2rem', color: '#', marginRight: '5px', cursor: 'pointer' }}></i>
                 <h5 style={{ flex: 1, textAlign: 'center' }}>{pcs[currentPCIndex]?.text || 'Loading...'}</h5>
                 <i className="bi bi-arrow-right-short" onClick={handleNextClick} style={{ fontSize: '2rem', color: '#A1A3AA', marginLeft: '5px', cursor: 'pointer' }}></i>
             </div>
             <div style={{ position: 'relative', overflow: 'hidden', flex: 1 }}>
                 {components.map(({ path, label }, index) => (
                     <div key={index} className="col-12">
+                        
                         <MiniCell path={path}>{`${label} of ${pcs[currentPCIndex]?.text || 'PC'}`}</MiniCell>
                     </div>
                 ))}

@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 
 const App = () => {
   const appStyle = {
-    backgroundColor: '#f3f3f3',
+    backgroundColor: '#023E8A',
     minHeight: '100vh',
     margin: '0',
     padding: '0',

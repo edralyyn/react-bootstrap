@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const NavbarComponent = () => {
     const navStyle = {
-        backgroundColor: '#ffffff',
+        backgroundColor: '#0077B6',
         boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.5)',
     };
 
