@@ -3,9 +3,7 @@ import os
 # Define the base directory and subdirectories
 base_dir = 'System Logs'
 sub_dirs = {
-    'PC': 'PC',
-    'Router': 'Router',
-    'Switch': 'Switch'
+    'PC': 'PC'
 }
 
 def find_csv_files(base_dir, sub_dirs):
@@ -21,7 +19,7 @@ def find_csv_files(base_dir, sub_dirs):
 def print_topology(csv_files):
     if csv_files:
         result = "\nDevice Type                ID   IP Address\n"
-        device_count = {'PC': 0, 'Router': 0, 'Switch': 0}
+        device_count = {'PC': 0}
         for device_type, csv_file in csv_files:
             device_count[device_type] += 1
             device_id = device_count[device_type]
