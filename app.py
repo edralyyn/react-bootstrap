@@ -4,11 +4,55 @@ from topology import find_csv_files, print_topology
 import os
 import pandas as pd
 import subprocess
+import schedule
+import time
+from threading import Thread, Lock
 
 app = Flask(__name__)
 CORS(app)
 
-server_process = subprocess.Popen(['python', 'server.py', '5001'])
+# Specify the full path to the Python interpreter in your virtual environment
+python_executable = os.path.join(os.getcwd(), 'myenv', 'Scripts', 'python.exe')  # Adjust for your environment
+
+# Start server.py subprocess
+server_process = subprocess.Popen([python_executable, 'server.py', '5001'])
+
+def run_file(filename):
+    # Get the current directory
+    current_dir = os.path.dirname(os.path.realpath(__file__))
+    
+    # Construct the full path to the file
+    file_path = os.path.join(current_dir, filename)
+    
+    # Check if the file exists
+    if os.path.exists(file_path):
+        # Run the file using subprocess with the virtual environment's Python interpreter
+        subprocess.run([python_executable, file_path])
+    else:
+        print(f"The file '{filename}' does not exist in the directory.")
+
+# Define a lock
+forecast_lock = Lock()
+
+def run_periodically(filename, initial_delay_minutes, interval_hours):
+    # Initial delay with logging
+    for i in range(initial_delay_minutes * 60, 0, -1):
+        print(f"Time remaining before running {filename}: {i} seconds")
+        time.sleep(1)
+    
+    # Acquire the lock before running the file
+    with forecast_lock:
+        # First run
+        print(f"Running {filename} for the first time")
+        run_file(filename)
+        
+        # Schedule subsequent runs
+        schedule.every(interval_hours).hours.do(run_file, filename)
+        
+        # Run the scheduler loop
+        while True:
+            schedule.run_pending()
+            time.sleep(1)  # Sleep for a short time to avoid high CPU usage
 
 @app.route('/', methods=['GET'])
 def get_topology():
@@ -100,6 +144,10 @@ def generate_line_graph_data():
         return None
 
 if __name__ == '__main__':
+    # Run the forecast.py periodically in a separate thread
+    forecast_thread = Thread(target=run_periodically, args=("forecast.py", 1, 1))
+    forecast_thread.start()
+
     try:
         app.run(debug=True)
     finally:
