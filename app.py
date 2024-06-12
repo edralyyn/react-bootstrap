@@ -36,7 +36,7 @@ forecast_lock = Lock()
 
 def run_periodically(filename, initial_delay_minutes, interval_hours):
     # Initial delay with logging
-    for i in range(initial_delay_minutes * 300, 0, -1):
+    for i in range(initial_delay_minutes * 10, 0, -1):
         print(f"Time remaining before running {filename}: {i} seconds")
         time.sleep(1)
     
@@ -149,7 +149,7 @@ if __name__ == '__main__':
     forecast_thread.start()
 
     try:
-        app.run(debug=False)  # Disable debug mode
+        app.run(debug=True)
     finally:
         # Terminate server.py subprocess when Flask app terminates
         server_process.terminate()
