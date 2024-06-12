@@ -1,9 +1,13 @@
 import socket
 import os
 import sys
+import threading
+import time
 
 # Define the host to listen on
 HOST = 'Edralyn'  # Replace with your server IP or hostname
+LOGS_FOLDER = os.path.join(os.getcwd(), "System Logs", "PC")
+FILE_AGE_LIMIT = 3600  # 1 hour in seconds
 
 def start_server(port):
     # Create a socket object
@@ -36,24 +40,43 @@ def start_server(port):
         logs = data[1]
         
         # Determine the folder to save logs
-        logs_folder = os.path.join(os.getcwd(), "System Logs", "PC")
-        if not os.path.exists(logs_folder):
-            os.makedirs(logs_folder)
+        if not os.path.exists(LOGS_FOLDER):
+            os.makedirs(LOGS_FOLDER)
 
         # Save logs to a file in the "System Logs/PC" folder
-        csv_file_path = os.path.join(logs_folder, filename)
+        csv_file_path = os.path.join(LOGS_FOLDER, filename)
         with open(csv_file_path, "wb") as csv_file:
             csv_file.write(logs)
-        print(f"Logs received and saved as {filename} successfully in folder: {logs_folder}")
+        print(f"Logs received and saved as {filename} successfully in folder: {LOGS_FOLDER}")
 
         # Close the connection
         client_socket.close()
 
     server_socket.close()
 
+def cleanup_old_files():
+    while True:
+        current_time = time.time()
+        for filename in os.listdir(LOGS_FOLDER):
+            file_path = os.path.join(LOGS_FOLDER, filename)
+            if os.path.isfile(file_path):
+                file_age = current_time - os.path.getmtime(file_path)
+                if file_age > FILE_AGE_LIMIT:
+                    os.remove(file_path)
+                    print(f"Deleted old file: {filename}")
+
+        # Sleep for a while before checking again
+        time.sleep(3600)  # Check every hour
+
 if __name__ == '__main__':
     if len(sys.argv) != 2:
         print("Usage: python server.py <port>")
         sys.exit(1)
     port = int(sys.argv[1])
+
+    # Start the file cleanup thread
+    cleanup_thread = threading.Thread(target=cleanup_old_files, daemon=True)
+    cleanup_thread.start()
+
+    # Start the server
     start_server(port)
