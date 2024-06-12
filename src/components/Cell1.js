@@ -81,7 +81,7 @@ const Cell1 = () => {
         { path: 'processor.glb', label: 'CPU' },
         { path: 'ram.glb', label: 'RAM' },
         { path: 'gpu.glb', label: 'GPU' },
-        { path: 'hdd.glb', label: 'HDD' } // Including HDD model
+        { path: 'hdd.glb', label: 'HDD' }
     ];
 
     const getForecastData = (pcIP, componentLabel) => {
@@ -96,7 +96,7 @@ const Cell1 = () => {
             case 'GPU':
                 return <span><strong>Hourly prediction for GPU: {forecastData['GPU_91%.h5']}</strong></span>;
             case 'HDD':
-                return <span><strong>Hourly prediction for HDD: N/A </strong></span>; // Placeholder until HDD data is available
+                return <span><strong>Hourly prediction for HDD: {forecastData['GPU_91%.h5']}</strong></span>; // Placeholder until HDD data is available
             default:
                 return 'Hourly prediction: N/A';
         }
