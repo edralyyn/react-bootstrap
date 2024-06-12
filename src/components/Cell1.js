@@ -96,7 +96,7 @@ const Cell1 = () => {
             case 'GPU':
                 return <span><strong>Hourly prediction for GPU: {forecastData['GPU_91%.h5']}</strong></span>;
             case 'HDD':
-                return <span><strong>Hourly prediction for HDD: {forecastData['GPU_91%.h5']}</strong></span>; // Placeholder until HDD data is available
+                return <span><strong>Hourly prediction for HDD: {forecastData['HDD_96%.h5']}</strong></span>; // Placeholder until HDD data is available
             default:
                 return 'Hourly prediction: N/A';
         }
