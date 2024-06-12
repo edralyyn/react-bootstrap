@@ -60,7 +60,6 @@ const eventSolutions = {
         "- Check disk health using tools like CrystalDiskInfo.\n" +
         "- Ensure there is enough free space on the disk.\n" +
         "- Consider defragmenting the disk if fragmentation is high.",
-    10016: "Event ID 10016: Sample suggestion"
 };
 
 const Cell4 = () => {
@@ -98,9 +97,9 @@ const Cell4 = () => {
     return (
         <div className="col" style={{ minHeight: "270px",borderRadius: '12px', marginInlineEnd: '7.5px', padding: '20px', marginBottom: '20px', textAlign: 'left', backgroundColor: '#ffffff', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.5)', position: 'relative', display: 'flex', flexDirection: 'column' }}>
             <div>
-                <h5 style={{ margin: '0px', marginBottom: '15px', textAlign:'center'}}>Suggested Solutions</h5>
+                <h2 style={{ margin: '0px', marginBottom: '25px', textAlign:'center'}}>Suggested Solutions</h2>
                 {solutions.length === 0 ? (
-                    <span>No critical issues predicted</span>
+                    <h5>No hardware critical condition that needs attention.</h5>
                 ) : (
                     solutions.map((solution, index) => (
                         <p key={index}>{solution}</p>
