@@ -32,7 +32,7 @@ const LayoutComponent = () => {
                 
             </div>
 
-            <div className="row">
+            <div className="row" style={{marginInlineStart: '7px', marginInlineEnd: '7px', marginBottom: '15px'}}>
                 <Cell6 />
             </div>
         </div>
