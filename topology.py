@@ -23,11 +23,12 @@ def print_topology(csv_files):
         for device_type, csv_file in csv_files:
             device_count[device_type] += 1
             device_id = device_count[device_type]
-            ip_address = csv_file.replace('.csv', '')
+            # Extract the IP address from the filename
+            ip_address = csv_file.split('_')[0]
             result += f"{device_type:25} {device_id:2}    {ip_address}\n"
         return result
     else:
-        return "No CSV files found in the folders."
+        return "No device connected"
 
 if __name__ == "__main__":
     csv_files = find_csv_files(base_dir, sub_dirs)
