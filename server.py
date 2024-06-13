@@ -38,20 +38,16 @@ def start_server(port):
         data = data.split(b'\n', 1)
         filename = data[0].decode()  # Decode the filename from bytes to string
         logs = data[1]
-
+        
         # Determine the folder to save logs
         if not os.path.exists(LOGS_FOLDER):
             os.makedirs(LOGS_FOLDER)
 
-        # Modify filename to include the client's IP address
-        client_ip = client_address[0]
-        modified_filename = f"{client_ip}.csv"
-
         # Save logs to a file in the "System Logs/PC" folder
-        csv_file_path = os.path.join(LOGS_FOLDER, modified_filename)
+        csv_file_path = os.path.join(LOGS_FOLDER, filename)
         with open(csv_file_path, "wb") as csv_file:
             csv_file.write(logs)
-        print(f"Logs received and saved as {modified_filename} successfully in folder: {LOGS_FOLDER}")
+        print(f"Logs received and saved as {filename} successfully in folder: {LOGS_FOLDER}")
 
         # Close the connection
         client_socket.close()
