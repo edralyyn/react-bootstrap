@@ -39,9 +39,9 @@ def run_file(filename):
 # Define a lock
 forecast_lock = Lock()
 
-def run_periodically(filename, initial_delay_minutes, interval_hours):
+def run_periodically(filename, initial_delay_seconds, interval_minutes):
     # Initial delay with logging
-    for i in range(initial_delay_minutes * 60, 0, -1):  # Corrected to use 60 instead of 10 for minute-to-second conversion
+    for i in range(initial_delay_seconds, 0, -1):
         print(f"Time remaining before running {filename}: {i} seconds")
         time.sleep(1)
     
@@ -52,7 +52,7 @@ def run_periodically(filename, initial_delay_minutes, interval_hours):
         run_file(filename)
         
         # Schedule subsequent runs
-        schedule.every(interval_hours).hours.do(run_file, filename)
+        schedule.every(interval_minutes).minutes.do(run_file, filename)
         
         # Run the scheduler loop
         while True:
@@ -164,7 +164,7 @@ def generate_line_graph_data():
 
 if __name__ == '__main__':
     # Run the forecast.py periodically in a separate thread
-    forecast_thread = Thread(target=run_periodically, args=("forecast.py", 5, 1))  # 5-minute delay, 1-hour interval
+    forecast_thread = Thread(target=run_periodically, args=("forecast.py", 60, 5))  # Changed to 60-second delay, 5-minute interval
     forecast_thread.start()
 
     try:

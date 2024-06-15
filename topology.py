@@ -27,7 +27,7 @@ def print_topology(csv_files):
             result += f"{device_type:25} {device_id:2}    {ip_address}\n"
         return result
     else:
-        return "No CSV files found in the folders."
+        return "No connected devices."
 
 if __name__ == "__main__":
     csv_files = find_csv_files(base_dir, sub_dirs)
